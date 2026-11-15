@@ -1,0 +1,11 @@
+{
+    // Import this Gradle project with the classic importer (Buildship) instead of the
+    // "Gradle Build Server". The Build Server does not put the JavaFX jars on the MODULE PATH,
+    // so with our module-info.java ("requires javafx.controls") VS Code shows
+    // "javafx.controls cannot be resolved to a module" and every JavaFX type is unresolved.
+    // Gradle itself (gradlew run / build) is not affected by this setting.
+    //
+    // If you opened the project BEFORE this file existed, run once:
+    //   Ctrl+Shift+P -> "Java: Clean Java Language Server Workspace"
+    "java.gradle.buildServer.enabled": "off"
+}
